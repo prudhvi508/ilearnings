@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Delete Duplicate Attachments" icon-name="utility:delete">
+        <div class="slds-p-around_medium">
+            <p>This component will delete duplicate attachments.</p>
+            <button onclick={deleteDuplicates} class="slds-button slds-button_brand">Delete Duplicate Attachments</button>
+            <template if:true={error}>
+                <div class="slds-text-color_error">{error}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
